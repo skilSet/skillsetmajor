@@ -1,0 +1,252 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	font-family: 'Sono', sans-serif;
+}
+html{
+	scroll-behavior: smooth;
+}
+body{
+	overflow-x: hidden;
+}
+a{
+	text-decoration: none;
+}
+header{
+/*	font-size: 25px;
+	line-height: 2*/
+}
+nav{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	background-color: white;
+	z-index: 999;
+	height: 60px;
+	width: 100%;
+	border-bottom: 1px solid white;
+	box-shadow: 3px 3px 2px lightgrey;
+	background-image: url(Wallpaper.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+nav img{
+	width: 50px;
+	border-radius: 50%;
+}
+nav button{
+	padding: 10px;
+	background-color: #FFD279;
+	margin: 10px;
+	border-radius: 2px;
+	border: 1px solid #CFB9E8;
+	transition: .3s
+
+}
+nav button:hover{
+	box-shadow: 5px 5px 19px #C6B4FF inset;
+}
+nav button a{
+	color: white;
+	font-size: 18px
+}
+
+
+
+.body{
+	position: relative;
+	top: 60px;
+	background-image: url(bimgg2.jpg);
+	background-repeat: no-reeat;
+	background-size: 80%;
+	position: relative;
+	
+}
+.entirety{
+	padding: 50px;
+	position: relative;
+	background-color: #EFEFEF99
+	
+}
+.form ol{
+	padding: 30px 0 30px 0;
+}
+form button{
+	padding: 10px;
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+	border: 2px solid #729CFE;
+	cursor: pointer;
+}
+.pack{
+	width: 60%;
+	border: 1px solid lightgrey;
+	box-shadow: 5px 5px #999;
+	padding: 40px;
+	background-color: #fff;
+	border-radius:10px;
+	position: relative;
+}
+.pack table{
+	width: 100%;
+	border: 2px ridge #999;
+	text-align: left;
+}
+.pack table td{
+	padding: 10px;
+	border-bottom: .5px dashed black;
+	border-right: 1px solid black;
+}
+.pack table td:nth-child(2){
+	border-right: 0px;
+}
+.pack table td:last-child{
+	border-right: 0px;
+}
+.pack table td:last-child button{
+	background-color: white;
+	border: 0px;
+	cursor: pointer;
+	transition: .1s;
+	font-size:17px;
+	color: #B6DFE6
+
+}
+.pack table td:last-child button:hover{
+	color: #729CFE
+}
+.pack .fa-bookmark{
+	position: absolute;
+	top: 0;
+	color: #FFD279
+}
+.pack1{
+	background-color: #FBFBF7;
+	border: px ;
+}
+.fa-crown{
+	color: gold;
+}
+.fa-fire{
+	color: red;
+}
+.product tr td a button{
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: black;
+	transform: scale(111%);
+}
+
+.cart{
+	position: fixed;
+	padding: 2px 2px 100px 12px;
+	right: 0;
+	width: 35%;
+	height: 100vh;
+	top: 55px;
+	border: 1px solid #729CFE;
+	border-top: 19px solid #729CFE;
+	overflow-x: hidden;
+	background-color: #FCFCFC;
+}
+.cart li{
+	padding: 5px;
+	font-size: large;
+}
+.cart a{
+	padding: 5px;
+	background-color: white;
+	margin: 15px 15px 0 0;
+	transition: .2s;
+	position: relative;
+	bottom: 10px;
+	float: right;
+	background-color: #fff;
+	font-size: 12px;
+	border-radius: 0px;
+	border: 2px solid black;
+	color: black;
+	display: 
+}
+.cart button{
+	background-color: #fff;
+	padding: 4px
+}
+.cart button:hover{
+	color: #FFD279;
+}
+.cart a:hover{
+	background-color: #729CFE;
+	color: white;
+}
+.footer{
+	display: flex;
+	width: 100%;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.product-name button{
+	background-color: #fff;
+	width: 20px;
+	height: 20px;
+	border-radius: 45%;
+	cursor: pointer;
+	float: right;
+	margin-right: 5px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.product-name button:hover{
+	background-color: #B6DFE6;
+}
+
+.product-content ul{
+         margin: 5px;
+         padding: 10px;
+         font-size: small;
+         background: #F2F2F1;
+         line-height: 1.9;
+         list-style-type: none;
+      }
+.product-content {
+         display: none;
+      }
+      .product-name.active .product-content {
+         display: block;
+      }
+
+      @media(max-device-width:500px){
+	.footer a{
+		font-size: 20px
+	}
+	header button i{
+		font-size: 20px
+	}
+	.entirety{
+		padding: 10px
+	}
+	.cart{
+		width:40%;
+	}
+	.pack{
+		width: 58%;
+	}
+	.pack table{
+		font-size: 25px;
+	}
+	.pack p{
+		font-size: 20px
+	}
+	.cart li{
+		font-size: 20px
+	}
+	.product-content ul{
+		font-size: large;
+	}
+
+}
